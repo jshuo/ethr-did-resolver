@@ -48,6 +48,7 @@ export enum verificationMethodTypes {
   Ed25519VerificationKey2018 = 'Ed25519VerificationKey2018',
   RSAVerificationKey2018 = 'RSAVerificationKey2018',
   X25519KeyAgreementKey2019 = 'X25519KeyAgreementKey2019',
+  EcdsaSecp256r1VerificationKey2019 = 'EcdsaSecp256r1VerificationKey2019',  
 }
 
 export enum eventNames {
