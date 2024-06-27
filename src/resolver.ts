@@ -166,7 +166,7 @@ export class EthrDidResolver {
             case 'veriKey':
               pks[eventIndex] = {
                 id: `${did}#delegate-${delegateCount}`,
-                type: verificationMethodTypes.EcdsaSecp256k1RecoveryMethod2020,
+                type: verificationMethodTypes.EcdsaSecp256r1VerificationKey2019,
                 controller: did,
                 blockchainAccountId: `eip155:${chainId}:${currentEvent.delegate}`,
               }
@@ -261,7 +261,7 @@ export class EthrDidResolver {
     const publicKeys: VerificationMethod[] = [
       {
         id: `${did}#controller`,
-        type: verificationMethodTypes.EcdsaSecp256k1RecoveryMethod2020,
+        type: verificationMethodTypes.EcdsaSecp256r1VerificationKey2019,
         controller: did,
         blockchainAccountId: `eip155:${chainId}:${controller}`,
       },
